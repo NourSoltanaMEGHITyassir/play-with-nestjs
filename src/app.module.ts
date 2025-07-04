@@ -3,10 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { AuthController } from './auth/auth.controller';
+import { TestService } from './test/test.service';
 
 @Module({
   imports: [ProductsModule],
   controllers: [AppController, AuthController],
-  providers: [AppService],
+  providers: [AppService, TestService],
 })
 export class AppModule {}
